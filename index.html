@@ -118,6 +118,7 @@
 <div style="max-width:600px; margin:auto;">
 
     <h3 class="resource-title gay-rainbow">OSINT RESOURCE</h3>
+    <audio id="bgAudio" src="your-audio-file.mp3" loop preload="auto"></audio>
 
     <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
         <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item">
@@ -235,4 +236,21 @@
 }
 
 </style>
+<script>
+  const audio = document.getElementById('bgAudio');
+  const container = document.getElementById('resource-menu');
+
+  // Function to start audio at full volume
+  const startAudio = () => {
+    audio.volume = 1.0; 
+    audio.play().catch(error => {
+      console.log("Autoplay prevented. Waiting for user interaction.");
+    });
+    // Remove listener after first click to prevent restarting on every click
+    container.removeEventListener('click', startAudio);
+  };
+
+  // Add the listener to the main overlay
+  container.addEventListener('click', startAudio);
+</script>
 </html>
