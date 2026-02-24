@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0, viewport-fit=cover"/>
+    <meta name="theme-color" content="#020617" />
+
+<style>
+      /* --- BASE THEME & OVERLAYS --- */
+     .full-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: #020617; z-index: 10000; overflow-y: auto; padding: 15px;
+      }
+      
+      .cat-legal { color: #10b981; border-color: #10b981; }
+      .cat-geo { color: #f43f5e; border-color: #f43f5e; }
+      .cat-data { color: #94a3b8; border-color: #94a3b8; }
+      .cat-start { color: #f59e0b; border-color: #f59e0b; }
+      .cat-person { color: #a855f7; border-color: #a855f7; }
+
+      .resource-item {
+        display: block; background: #0f172a; border: 1px solid #1e293b;
+        padding: 12px; margin-bottom: 8px; color: #e2e8f0;
+        text-decoration: none; font-family: monospace; font-size: 0.85rem; line-height: 1.4;
+      }
+      .resource-item:hover { background: #1e293b; }
+      .resource-header { font-family: monospace; margin-top: 25px; padding-bottom: 5px; border-bottom: 1px solid #1e293b; text-transform: uppercase; font-size: 1rem; }
+      .link-text { text-decoration: underline; font-weight: bold; }
+
+</style>
+</head>
+
+<body>
+
+
+<div id="resource-menu" class="full-overlay">
+<div style="max-width:600px; margin:auto;">
+
+
+    <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
+        <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item">
+            <strong>Find My Landlord</strong><br>
+            <span class="link-text" style="color: #f59e0b;">Search Landlord</span>
+        </a>
+        <a href="https://montreal.ca/en/how-to/check-property-assessment-rolls" target="_blank" class="resource-item">
+            <strong>Find Building Owner, Total Units, Property Value, Potential Business Name</strong><br>
+            <span class="link-text" style="color: #f59e0b;">Search Property Rolls</span>
+        </a>
+        
+    <h3 class="resource-header cat-legal">Gov and Court Search</h3>
+        <a href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises" target="_blank" class="resource-item">
+            <strong>Quebec Business Registry</strong><br>
+            <span class="link-text" style="color: #10b981;">Registraire des Entreprises Search</span>
+        </a>
+        <a href="https://ised-isde.canada.ca/cbr-rec/" target="_blank" class="resource-item">
+            <strong>Canada Business Registry</strong><br>
+            <span class="link-text" style="color: #10b981;">Corporations Canada Search</span>
+        </a>
+        <a href="https://citoyens.soquij.qc.ca/" target="_blank" class="resource-item">
+            <strong>SOQUIJ Judicial Decisions, Court Record</strong><br>
+            <span class="link-text" style="color: #10b981;">Search Court Records</span>
+        </a>
+
+    <h3 class="resource-header cat-geo">Map Searching</h3>
+         <a href="https://data.mashedworld.com/dualmaps/map.htm" target="_blank" class="resource-item">
+            <strong>Dual Maps for viewing, Street, Satelite, Regular in one tab</strong><br>
+            <span class="link-text" style="color: #f43f5e;">Search Map</span>
+        </a>
+        <a href="http://mobility.portal.geops.io/world.geops.transit" target="_blank" class="resource-item">
+            <strong>Live Transport Tracker</strong><br>
+            <span class="link-text" style="color: #f43f5e;">Transport Options Map & Info</span>
+        </a>
+
+    <h3 class="resource-header cat-person">Person Search, Number Search, Google Search</h3>
+        <a href="https://www.canada411.ca/search/advanced.html" target="_blank" class="resource-item">
+            <strong>Canada411</strong><br>
+            <span class="link-text" style="color: #a855f7;">Search Canada411</span>
+        </a>
+        <a href="https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32" target="_blank" class="resource-item">
+            <strong>Google Dorking Guide</strong><br>
+            <span class="link-text" style="color: #a855f7;">Google dorking cheatsheet</span>
+        </a>
+
+
+       
+    <h3 class="resource-header cat-data">Data Seaerch</h3>
+        <a href="https://donnees.montreal.ca/" target="_blank" class="resource-item">
+            <strong>Montreal Open Data Portal</strong><br>
+            <span class="link-text" style="color: #94a3b8;">Geo files & Stats</span>
+        </a>
+        <a href="https://spvm.qc.ca/en/Search/Adresse" target="_blank" class="resource-item">
+            <strong>Find your local SPVM Station</strong><br>
+            <span class="link-text" style="color: #94a3b8;">Search by Address</span>
+        </a>
+
+</div>
+</div>
+</body>
+</html>
