@@ -118,7 +118,7 @@
 <div style="max-width:600px; margin:auto;">
 
     <h3 class="resource-title gay-rainbow">OSINT RESOURCE</h3>
-    <audio id="bgAudio" src="517328-11191603-lq_RN2E4IE8.mp3" loop preload="auto"></audio>
+    <audio id="bgAudio" loop preload="auto"></audio>
 
     <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
         <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item">
@@ -240,17 +240,33 @@
   const audio = document.getElementById('bgAudio');
   const container = document.getElementById('resource-menu');
 
-  // Function to start audio at full volume
+  // List your three audio files here
+  const audioFiles = [
+    "517328-11191603-lq_RN2E4IE8.mp3",
+    "long-brain-fart.mp3",
+    "mission-impossible-flute.mp3"
+  ];
+
   const startAudio = () => {
+    // Math.random() * 3 produces a number between 0 and 2.99
+    // Math.floor() rounds it down to exactly 0, 1, or 2
+    const randomIndex = Math.floor(Math.random() * audioFiles.length);
+    
+    // Assign the randomly selected file
+    audio.src = audioFiles[randomIndex];
+    
+    // Set to full volume and play
     audio.volume = 1.0; 
     audio.play().catch(error => {
-      console.log("Autoplay prevented. Waiting for user interaction.");
+      console.log("Browser blocked autoplay. User interaction successful.");
     });
-    // Remove listener after first click to prevent restarting on every click
+
+    // Remove the listener so the song doesn't change on every click
     container.removeEventListener('click', startAudio);
   };
 
-  // Add the listener to the main overlay
+  // The sound will trigger the first time the user clicks anywhere on your menu
   container.addEventListener('click', startAudio);
 </script>
+
 </html>
