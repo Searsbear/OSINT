@@ -97,7 +97,7 @@
       border-bottom: 1px solid #1e293b;
       text-transform: uppercase;
       font-size: 1rem; 
-        
+
       }
       .resource-title { 
       font-family: monospace;
@@ -108,9 +108,24 @@
       font-size: 2.2rem;}
       .link-text { text-decoration: underline; font-weight: bold; }
 
-body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
-        textarea { width: 100%; height: 200px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        .counter { font-size: 1.5rem; font-weight: bold; color: #007bff; margin-top: 10px; }
+     body { 
+     font-family: sans-serif; 
+     margin: 40px;
+     line-height: 1.6; }
+     
+     textarea {
+      width: 100%;
+      height: 100px; 
+      padding: 10px; 
+      border: 1px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+     }
+     
+     .counter { 
+      font-size: 1.5rem; 
+      font-weight: bold;
+      margin-top: 5px; }
 
 </style>
 </head>
@@ -137,21 +152,13 @@ body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
             <strong>PART 1: Find Total Units Using </strong><strong class="gay-rainbow">Canada Post</strong><br>
             <span class="link-text gay-but-in-an-office">Search Address Complete and Copy list for next step</span>
         </a>
-        <a href="https://charactercounter.com/line-counter" target="_blank" class="resource-item">
-            <strong>PART 2: Line Counter to count total units listed</strong><br>
-            <span class="link-text still-gay-but-in-an-office">Paste here to count</span>
-        </a>
+        
+    <h3 class="resource-header gay-rainbow">PART 2: Text Line Counter</h3>
+    <textarea class="gay-rainbow" id="textInput" placeholder="Type or paste text here..."></textarea>
 
-    <h3 class="resource-header gay-rainbow">Text Line Counter</h3>
-    <p>Paste your text below to see the line count in real-time.</p>
-
-    <textarea id="textInput" placeholder="Type or paste text here..."></textarea>
-    
-    <div class="counter">
+    <div class="counter gay-rainbow">
         Lines: <span id="lineCount">0</span>
     </div>
-
-
 
     <h3 class="resource-header cat-legal">Gov and Court Search</h3>
         <a href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises" target="_blank" class="resource-item">
@@ -166,9 +173,9 @@ body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
             <strong>SOQUIJ Judicial Decisions, Court Record</strong><br>
             <span class="link-text gay-but-in-a-cool-way">Search <span class="link-text gay-rainbow">Court</span><span class="link-text gay-but-in-a-cool-way"> Records</span>
         </a>
-
-
-
+        
+        
+        
     <h3 class="resource-header cat-geo">Map Searching</h3>
          <a href="https://data.mashedworld.com/dualmaps/map.htm" target="_blank" class="resource-item">
             <strong>Dual Maps for viewing, Street, Satelite, Regular in one tab</strong><br>
@@ -271,10 +278,10 @@ body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
     // Math.random() * 3 produces a number between 0 and 2.99
     // Math.floor() rounds it down to exactly 0, 1, or 2
     const randomIndex = Math.floor(Math.random() * audioFiles.length);
-    
+
     // Assign the randomly selected file
     audio.src = audioFiles[randomIndex];
-    
+
     // Set to full volume and play
     audio.volume = 1.0; 
     audio.play().catch(error => {
@@ -294,11 +301,11 @@ body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
 
         textArea.addEventListener('input', () => {
             const text = textArea.value;
-            
+
             // If the box is empty, lines = 0. 
             // Otherwise, we count how many segments exist when split by newlines.
             const lines = text === "" ? 0 : text.split('\n').length;
-            
+
             countDisplay.innerText = lines;
         });
 </script>
