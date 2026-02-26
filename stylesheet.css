@@ -59,7 +59,7 @@
       .url-list {
         overflow-wrap: break-word;
         margin-bottom: 5px;
-        padding: 10px;
+        color: #e2e8f0;
       }
 
      body { 
@@ -103,5 +103,4 @@
 @keyframes rainbow-animation {
   0% { background-position: 0 0; }
   100% { background-position: 200% center; }
-
 }
