@@ -4,135 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0, viewport-fit=cover"/>
     <meta name="theme-color" content="#020617" />
-
-<!-- Copy Paste refference for adding new stuff -->
-<!--
-  <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
-  
-  This is what you copy paste without the quotations and fill in the info "
-    <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item">
-    <strong>Find My Landlord</strong><br>
-    <span class="link-text orange">Search Landlord</span>
-    </a>
-    "
-    
-  <h3 class="resource-header cat-geo">Map Searching</h3>
-  This is what you copy paste without the quotations and fill in the info "
-    <a href="https://data.mashedworld.com/dualmaps/map.htm" target="_blank" class="resource-item">
-    <strong>Dual Maps for viewing, Street, Satelite, Regular in one tab</strong><br>
-    <span class="link-text red">Search Map</span>
-    </a>
-    "
-
-  <h3 class="resource-header cat-legal">Gov and Court Search</h3>
-  This is what you copy paste without the quotations and fill in the info "
-    <a href="web link goes here" target="_blank" class="resource-item">
-    <strong>Name of resource item</strong><br>
-    <span class="link-text green">what it does</span>
-    </a>
-    "
-
-  <h3 class="resource-header cat-person">Person Search, Number Search, Google Search</h3>
-  This is what you copy paste... noticinh a pattern here?? "
-    <a href="webpage url goes here" target="_blank" class="resource-item">
-    <strong>Name of resource goes here</strong><br>
-    <span class="link-text purple">what it does goes here</span>
-    </a>
-    "
-
- <h3 class="resource-header cat-data">Data Seaerch and Extras</h3>
- If you dont see the pattern yet, ya likely never will but copy paste it and fill it out anyways and ill fix it another day I guess "
-    <a href="https://donnees.montreal.ca/" target="_blank" class="resource-item">
-   <strong>Montreal Open Data Portal</strong><br>
-   <span class="link-text grey">Geo files & Stats</span>
-   </a>
-  "
--->
-
-<style>
-     .full-overlay {
-        position: fixed;
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 100%;
-        background: #020617; 
-        z-index: 10000; 
-        overflow-y: auto; 
-        padding: 15px; 
-        box-sizing: border-box;
-      }
-
-      .cat-legal, .green { color: #10b981; border-color: #10b981; }
-      .cat-geo, .red { 
-        color: #f43f5e; 
-        border-color: #f43f5e; }
-      .cat-data, .grey { 
-        color: #94a3b8; 
-        border-color: #94a3b8; }
-      .cat-start, .orange { 
-        color: #f59e0b; 
-        border-color: #f59e0b; }
-      .cat-person, .purple { 
-        color: #a855f7; 
-        border-color: #a855f7; }
-
-      .resource-item {
-        display: block;
-        background: #0f172a;
-        border: 1px solid #1e293b;
-        padding: 12px;
-        margin-bottom: 8px;
-        color: #e2e8f0;
-        text-decoration: none;
-        font-family: monospace;
-        font-size: 0.85rem;
-        line-height: 1.4;
-      }
-      .resource-item:hover { background: #1e293b; }
-      .resource-header {
-      font-family: monospace;
-      margin-top: 25px; 
-      padding-bottom: 5px;
-      border-bottom: 1px solid #1e293b;
-      text-transform: uppercase;
-      font-size: 1rem; 
-
-      }
-      .resource-title { 
-      font-family: monospace;
-      margin-top: 25px;
-      padding-bottom: 5px;
-      border-bottom: 1px solid #1e293b;
-      text-transform: uppercase;
-      font-size: 2.2rem;}
-      .link-text { text-decoration: underline; font-weight: bold; }
-
-     body { 
-     font-family: sans-serif; 
-     margin: 40px;
-     line-height: 1.6; }
-
-     textarea {
-      width: 100%;
-      height: 100px; 
-      padding: 10px; 
-      border: 1px solid grey;
-      border-radius: 5px;
-      box-sizing: border-box;
-     }
-
-     .counter { 
-      font-size: 1.5rem; 
-      font-weight: bold;
-      margin-top: 5px; }
-
-</style>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
-
-
 <div id="resource-menu" class="full-overlay">
 <div style="max-width:600px; margin:auto;">
 
@@ -226,54 +100,26 @@
   If you have more links and URL's please send them my way and I'll add them:)
 </span>
 
-<span class="resource-item" style="overflow-wrap: break-word; margin-bottom: 5px;">
-  https://findmylandlord.netlify.app/
-  https://montreal.ca/en/how-to/check-property-assessment-rolls
-  https://www.canadapost-postescanada.ca/ac
-  https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises
-  https://ised-isde.canada.ca/cbr-rec/
-  https://citoyens.soquij.qc.ca/
-  https://data.mashedworld.com/dualmaps/map.htm
-  http://mobility.portal.geops.io/world.geops.transit
-  https://www.canada411.ca/search/advanced.html
-  https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32
-  https://donnees.montreal.ca/
-  https://osintframework.com
-  https://hackertarget.com
-  https://searsbear.github.io
-</span>
-  <div style="text-align: center;">
-    <img src="OSINT QR.png" alt="fucking qr code didnt load dammit" style="max-width: 100%; height: auto; display: block; center">
-  </div>
+<div class="resource-item">
+    <span class="url-list">https://findmylandlord.netlify.app/</span>
+    <span class="url-list">https://montreal.ca/en/how-to/check-property-assessment-rolls</span>
+    <span class="url-list">https://www.canadapost-postescanada.ca/ac</span>
+    <span class="url-list">https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises</span>
+    <span class="url-list">https://ised-isde.canada.ca/cbr-rec/</span>
+    <span class="url-list">https://citoyens.soquij.qc.ca/</span>
+    <span class="url-list">https://data.mashedworld.com/dualmaps/map.htm</span>
+    <span class="url-list">http://mobility.portal.geops.io/world.geops.transit</span>
+    <span class="url-list">https://www.canada411.ca/search/advanced.html</span>
+    <span class="url-list">https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32</span>
+    <span class="url-list">https://donnees.montreal.ca/</span>
+    <span class="url-list">https://osintframework.com</span>
+    <span class="url-list">https://hackertarget.com</span>
+    <span class="url-list">https://searsbear.github.io</span>
+</div>
+    <img src="OSINT QR.png" alt="fucking qr code didnt load dammit" style="max-width: 100%; height: auto; display: block;">
 </div>
 </div>
 </body>
-<style>
-      .gay, .gay-but-with-guns { 
-        color: #94a3b8; 
-        border-color: #94a3b8; }
-
-      .gay-but-in-an-office, .still-gay-but-in-an-office { 
-        color: #f59e0b; 
-        border-color: #f59e0b; }
-
-      .really-gay, .really-gay-but-also-french, .gay-but-in-a-cool-way { color: #10b981; border-color: #10b981; }
-
-      .gay-rainbow {
-  background: linear-gradient(to right, #F94D4D, #F9664D, #F97E4D, #F9974D, #F9B04D, #F9C84D, #F9E14D, #F9F94D, #E1F94D, #C8F94D, #B0F94D, #97F94D, #7EF94D, #66F94D, #4DF94D, #4DF966, #4DF97E, #4DF997, #4DF9B0, #4DF9C8, #4DF9E1, #4DF9F9, #4DE1F9, #4DC8F9, #4DB0F9, #4D97F9, #4D7EF9, #4D66F9, #4D4DF9, #664DF9, #7E4DF9, #974DF9, #B04DF9, #C84DF9, #E14DF9, #F94DF9, #F94DE1, #F94DC8, #F94DB0, #F94D97, #F94D7E, #F94D4D);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-size: 200% auto;
-  animation: rainbow-animation 3s linear infinite;
-}
-
-@keyframes rainbow-animation {
-  0% { background-position: 0 0; }
-  100% { background-position: 200% center; }
-}
-
-</style>
 <script>
         const textArea = document.getElementById('textInput');
         const countDisplay = document.getElementById('lineCount');
@@ -281,8 +127,6 @@
         textArea.addEventListener('input', () => {
             const text = textArea.value;
 
-            // If the box is empty, lines = 0. 
-            // Otherwise, we count how many segments exist when split by newlines.
             const lines = text === "" ? 0 : text.split('\n').length;
 
             countDisplay.innerText = lines;
