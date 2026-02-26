@@ -1,0 +1,41 @@
+<!-- Copy Paste refference for adding new stuff -->
+  <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
+  
+  This is what you copy paste without the quotations and fill in the info "
+    <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item">
+    <strong>Find My Landlord</strong><br>
+    <span class="link-text orange">Search Landlord</span>
+    </a>
+    "
+    
+  <h3 class="resource-header cat-geo">Map Searching</h3>
+  This is what you copy paste without the quotations and fill in the info "
+    <a href="https://data.mashedworld.com/dualmaps/map.htm" target="_blank" class="resource-item">
+    <strong>Dual Maps for viewing, Street, Satelite, Regular in one tab</strong><br>
+    <span class="link-text red">Search Map</span>
+    </a>
+    "
+
+  <h3 class="resource-header cat-legal">Gov and Court Search</h3>
+  This is what you copy paste without the quotations and fill in the info "
+    <a href="web link goes here" target="_blank" class="resource-item">
+    <strong>Name of resource item</strong><br>
+    <span class="link-text green">what it does</span>
+    </a>
+    "
+
+  <h3 class="resource-header cat-person">Person Search, Number Search, Google Search</h3>
+  This is what you copy paste... noticinh a pattern here?? "
+    <a href="webpage url goes here" target="_blank" class="resource-item">
+    <strong>Name of resource goes here</strong><br>
+    <span class="link-text purple">what it does goes here</span>
+    </a>
+    "
+
+ <h3 class="resource-header cat-data">Data Seaerch and Extras</h3>
+ If you dont see the pattern yet, ya likely never will but copy paste it and fill it out anyways and ill fix it another day I guess "
+    <a href="https://donnees.montreal.ca/" target="_blank" class="resource-item">
+   <strong>Montreal Open Data Portal</strong><br>
+   <span class="link-text grey">Geo files & Stats</span>
+   </a>
+  "

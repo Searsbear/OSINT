@@ -1,0 +1,105 @@
+.full-overlay {
+        position: fixed;
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;
+        background: #020617; 
+        z-index: 10000; 
+        overflow-y: auto; 
+        padding: 15px; 
+        box-sizing: border-box;
+      }
+
+      .cat-legal, .green { color: #10b981; border-color: #10b981; }
+      .cat-geo, .red { 
+        color: #f43f5e; 
+        border-color: #f43f5e; }
+      .cat-data, .grey { 
+        color: #94a3b8; 
+        border-color: #94a3b8; }
+      .cat-start, .orange { 
+        color: #f59e0b; 
+        border-color: #f59e0b; }
+      .cat-person, .purple { 
+        color: #a855f7; 
+        border-color: #a855f7; }
+
+      .resource-item {
+        display: block;
+        background: #0f172a;
+        border: 1px solid #1e293b;
+        padding: 12px;
+        margin-bottom: 8px;
+        color: #e2e8f0;
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 0.85rem;
+        line-height: 1.4;
+      }
+      .resource-item:hover { background: #1e293b; }
+      .resource-header {
+      font-family: monospace;
+      margin-top: 25px; 
+      padding-bottom: 5px;
+      border-bottom: 1px solid #1e293b;
+      text-transform: uppercase;
+      font-size: 1rem; 
+
+      }
+      .resource-title { 
+      font-family: monospace;
+      margin-top: 25px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #1e293b;
+      text-transform: uppercase;
+      font-size: 2.2rem;}
+      .link-text { text-decoration: underline; font-weight: bold; }
+
+      .url-list {
+        overflow-wrap: break-word;
+        margin-bottom: 5px;
+      }
+
+     body { 
+     font-family: sans-serif; 
+     margin: 40px;
+     line-height: 1.6; }
+
+     textarea {
+      width: 100%;
+      height: 100px; 
+      padding: 10px; 
+      border: 1px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+     }
+
+     .counter { 
+      font-size: 1.5rem; 
+      font-weight: bold;
+      margin-top: 5px; }
+
+            .gay, .gay-but-with-guns { 
+        color: #94a3b8; 
+        border-color: #94a3b8; }
+
+      .gay-but-in-an-office, .still-gay-but-in-an-office { 
+        color: #f59e0b; 
+        border-color: #f59e0b; }
+
+      .really-gay, .really-gay-but-also-french, .gay-but-in-a-cool-way { color: #10b981; border-color: #10b981; }
+
+      .gay-rainbow {
+  background: linear-gradient(to right, #F94D4D, #F9664D, #F97E4D, #F9974D, #F9B04D, #F9C84D, #F9E14D, #F9F94D, #E1F94D, #C8F94D, #B0F94D, #97F94D, #7EF94D, #66F94D, #4DF94D, #4DF966, #4DF97E, #4DF997, #4DF9B0, #4DF9C8, #4DF9E1, #4DF9F9, #4DE1F9, #4DC8F9, #4DB0F9, #4D97F9, #4D7EF9, #4D66F9, #4D4DF9, #664DF9, #7E4DF9, #974DF9, #B04DF9, #C84DF9, #E14DF9, #F94DF9, #F94DE1, #F94DC8, #F94DB0, #F94D97, #F94D7E, #F94D4D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: rainbow-animation 3s linear infinite;
+}
+
+@keyframes rainbow-animation {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% center; }
+}
