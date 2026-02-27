@@ -13,22 +13,22 @@
 
       .cat-legal, .green { 
         color: #10b981;
-        border-color: #10b981; }
+        border-color: #10b981 !important; }
       .cat-geo, .red { 
         color: #f43f5e; 
-        border-color: #f43f5e; }
+        border-color: #f43f5e !important; }
       .cat-data, .grey { 
         color: #94a3b8; 
-        border-color: #94a3b8; }
+        border-color: #94a3b8 !important; }
       .cat-start, .orange { 
         color: #f59e0b; 
-        border-color: #f59e0b; }
+        border-color: #f59e0b !important; }
       .cat-person, .purple { 
         color: #a855f7; 
-        border-color: #a855f7; }
+        border-color: #a855f7 !important; }
       .cat-report, .blue { 
         color: #3b82f6; 
-        border-color: #3b82f6; }
+        border-color: #3b82f6 !important; }
 
       /* Dropdown Styling */
 /* Container for the dropdown */
@@ -105,7 +105,6 @@ details[open] summary.resource-header::after {
 .nested-summary {
     background: #1e293b;
     padding: 12px;
-    color: #3b82f6;
     font-family: monospace;
     cursor: pointer;
     list-style: none;
@@ -118,11 +117,10 @@ details[open] summary.resource-header::after {
 .nested-summary {
     background: #1e293b;
     padding: 10px;
-    color: #3b82f6; /* Matching your .blue class */
     font-family: monospace;
     cursor: pointer;
     list-style: none;
-    border: 1px solid #3b82f6;
+    border: 1px solid;
     display: block;
 }
 
@@ -138,6 +136,14 @@ details[open] summary.resource-header::after {
         font-size: 0.85rem;
         line-height: 1.4;
       }
+
+.resource-item.orange, .resource-item.cat-start { border-color: #f59e0b; }
+.resource-item.blue,   .resource-item.cat-report { border-color: #3b82f6; }
+.resource-item.green,  .resource-item.cat-legal  { border-color: #10b981; }
+.resource-item.red,    .resource-item.cat-geo    { border-color: #f43f5e; }
+.resource-item.purple, .resource-item.cat-person { border-color: #a855f7; }
+.resource-item.grey,   .resource-item.cat-data   { border-color: #94a3b8; }
+
       .resource-item:hover { background: #1e293b; }
       .resource-header {
       font-family: monospace;
