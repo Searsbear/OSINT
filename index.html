@@ -5,246 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0, viewport-fit=cover"/>
     <meta name="theme-color" content="#020617" />
     <link rel="stylesheet" href="stylesheet.css">
-<title>Tenant Tools</title>
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
+    <title>Tenant Tools</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
 <div id="resource-menu" class="full-overlay">
-<div style="max-width:600px; margin:auto;">
+    <div style="max-width:600px; margin:auto;">
+        <h3 class="resource-title gay-rainbow">TENANT RESOURCES</h3>
+            <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
+                <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item cat-start">
+                    <strong>Find My </strong><strong class="gay-rainbow">Landlord</strong><br>
+                    <span class="link-text orange">Search Landlord</span>
+                </a>
+                <a href="https://montreal.ca/en/how-to/check-property-assessment-rolls" target="_blank" class="resource-item cat-start">
+                    <strong>Find Building Owner, Total Units, Property Value, Potential Business Name</strong><br>
+                    <span class="link-text gay-but-in-an-office">Search Property Rolls</span>
+                </a>
 
-    <h3 class="resource-title gay-rainbow">TENANT RESOURCES</h3>
-
-    <h3 class="resource-header cat-start">Finding General Building and Landlord Info</h3>
-        <a href="https://findmylandlord.netlify.app/" target="_blank" class="resource-item cat-start">
-            <strong>Find My </strong><strong class="gay-rainbow">Landlord</strong><br>
-            <span class="link-text orange">Search Landlord</span>
-        </a>
-        <a href="https://montreal.ca/en/how-to/check-property-assessment-rolls" target="_blank" class="resource-item cat-start">
-            <strong>Find Building Owner, Total Units, Property Value, Potential Business Name</strong><br>
-            <span class="link-text gay-but-in-an-office">Search Property Rolls</span>
-        </a>
-
-       <details class="nested-details cat-start">
-        <summary class="nested-summary cat-start">How to use Canada Post to find total units</summary>
-        <div class="nested-box">
-        <a href="https://www.canadapost-postescanada.ca/ac/" target="_blank" class="sub-link">
-            <strong>PART 1: Find Total Units Using </strong><strong class="gay-rainbow">Canada Post</strong><br>
-            <span class="link-text gay-but-in-an-office">Search Address Complete and Copy list for next step</span>
-        </a>
-    </div>
-    <div style="padding-left: 5px; padding-right: 5px;"
-    <h3 class="resource-header gay-rainbow">PART 2: Text Line Counter</h3>
-    <textarea class="gay-rainbow" id="textInput" placeholder="Type or paste text here..."></textarea>
-
-    <div class="counter gay-rainbow">
-        Lines: <span id="lineCount">0</span>
-    </div>
-        </div>
+                <details class="nested-details cat-start">
+                    <summary class="nested-summary cat-start">How to use Canada Post to find total units</summary>
+                        <div class="nested-box">
+                            <a href="https://www.canadapost-postescanada.ca/ac/" target="_blank" class="sub-link">
+                                <strong>PART 1: Find Total Units Using </strong><strong class="gay-rainbow">Canada Post</strong><br>
+                                <span class="link-text gay-but-in-an-office">Search Address Complete and Copy list for next step</span>
+                            </a>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;"
+                            <h3 class="resource-header gay-rainbow">PART 2: Text Line Counter</h3>
+                            <textarea class="gay-rainbow" id="textInput" placeholder="Type or paste text here..."></textarea>
+                            <div class="counter gay-rainbow">
+                                Lines: <span id="lineCount">0</span>
+                            </div>
+                        </div>
+                </details>
+        <h3 class="resource-header cat-legal">Gov and Court Search</h3>
+            <a href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises" target="_blank" class="resource-item cat-legal">
+                <strong class="gay-rainbow">Quebec</strong><strong> Business Registry</strong><br>
+                <span class="link-text really-gay-but-also-french">Registraire des Entreprises Search</span>
+            </a>
+            <a href="https://ised-isde.canada.ca/cbr-rec/" target="_blank" class="resource-item cat-legal">
+                <strong class="gay-rainbow">Canada</strong><strong> Business Registry</strong><br>
+                <span class="link-text really-gay">Corporations Canada Search</span>
+            </a>
+            <a href="https://citoyens.soquij.qc.ca/" target="_blank" class="resource-item cat-legal">
+                <strong>SOQUIJ Judicial Decisions, Court Record</strong><br>
+                <span class="link-text gay-but-in-a-cool-way">Search <span class="link-text gay-rainbow">Court</span><span class="link-text gay-but-in-a-cool-way"> Records</span>
+            </a>
+        <h3 class="resource-header cat-geo">Map Searching</h3>
+            <a href="https://data.mashedworld.com/dualmaps/map.htm" target="_blank" class="resource-item cat-geo">
+                <strong>Dual Maps for viewing, Street, Satelite, Regular in one tab</strong><br>
+                <span class="link-text red">Search Map</span>
+            </a>
+            <a href="http://mobility.portal.geops.io/world.geops.transit" target="_blank" class="resource-item cat-geo">
+                <strong>Live Transport Tracker</strong><br>
+                <span class="link-text red">Transport Map & Info</span>
+            </a>
+        <h3 class="resource-header cat-person">Person Search, Number Search, Google Search</h3>
+            <a href="https://www.canada411.ca/search/advanced.html" target="_blank" class="resource-item cat-person">
+                <strong>Canada411</strong><br>
+                <span class="link-text purple">Search Canada411</span>
+            </a>
+            <a href="https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32" target="_blank" class="resource-item cat-person">
+                <strong>Google Dorking Guide</strong><br>
+                <span class="link-text purple">Google dorking cheatsheet</span>
+            </a>
+            <details class="resource-group">
+                <summary class="resource-header cat-data">Data Seaerch and Extras</summary>
+                    <div class="dropdown-content">
+                        <a href="https://donnees.montreal.ca/" target="_blank" class="resource-item cat-data">
+                            <strong class="gay-rainbow">Montreal</strong><strong> Open Data Portal</strong><br>
+                            <span class="link-text gay">Geo files & Stats</span>
+                        </a>
+                        <a href="https://spvm.qc.ca/en/Search/Adresse" target="_blank" class="resource-item cat-data">
+                            <strong>Find your local </strong><strong class="gay-rainbow">SPVM</strong> Station</strong><br>
+                            <span class="link-text gay-but-with-guns">Search by Address</span>
+                        </a>
+                        <a href="https://osintframework.com" target="_blank" class="resource-item cat-data">
+                            <strong>OSINT Framework</strong><br>
+                            <span class="link-text grey">Open OSINT Resource</span>
+                        </a>
+                        <a href="https://hackertarget.com" target="_blank" class="resource-item cat-data">
+                            <strong>Hacker Target Resource</strong><br>
+                            <span class="link-text grey">Find Stuff IDK look lol</span>
+                        </a>
+                        <a href="https://searsbear.github.io" target="_blank" class="resource-item cat-data">
+                            <strong>Other Reources for Less OSINT heavy things but still useful</strong><br>
+                            <span class="link-text grey">Look Here lol IDK</span>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/List_of_intelligence_gathering_disciplines" target="_blank" class="resource-item cat-data">
+                            <span class="link-text grey">Intelligence Gathering Disciplines</span>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Intelligence_assessment" target="_blank" class="resource-item cat-data">
+                            <span class="link-text grey">Intel assessment styles</span>
+                        </a>
+                        <a href="https://barcode.tec-it.com/en/QRCode" target="_blank" class="resource-item cat-data">
+                            <span class="link-text grey">QR Code Generator (or any barcode)</span>
+                        </a>
+                </div>
+            </details>
+        <details class="resource-group">
+            <summary class="resource-header cat-report">Legal Resources and Reporting</summary>
+                <div class="dropdown-content">
+                    <details class="nested-details"> 
+                        <summary class="nested-summary cat-report">Educaloi</summary>
+                            <div class="nested-box">
+                                <a href="https://educaloi.qc.ca/en/the-law-by-topic/" target="_blank" class="sub-link">
+                                    <strong>Educaloi</strong><br>
+                                    <span class="link-text blue">Learn the Laws and Rules</span>
+                                </a>
+                                <a href="https://educaloi.qc.ca/wp-content/uploads/guide_info_sheet_2.pdf" target="_blank" class="sub-link">
+                                    <strong>Guide for finding free legal clinics</strong><br>
+                                    <span class="link-text blue">legal aid, legal clinic PDF list</span>
+                                </a>
+                            </div>
+                    </details>
+                    <details class="nested-details"> 
+                        <summary class="nested-summary cat-report">Reporting Fraud</summary>
+                            <div class="nested-box">
+                                <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html" target="_blank" class="sub-link">
+                                    <strong>Report Suspected Tax Cheating in Canada</strong><br>
+                                    <span class="link-text blue">Report Tax Cheating</span>
+                                </a>
+                                <a href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/" target="_blank" class="sub-link">
+                                    <strong>Report Non-Compliance to Revenu Quebec</strong><br>
+                                    <span class="link-text blue">Report Non-Compliance</span>
+                                </a>
+                                <a href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/" target="_blank" class="sub-link">
+                                    <strong>How to Document Non-Compliance for Revenu Quebec</strong><br>
+                                    <span class="link-text blue">Document Non-Compliance</span>
+                                </a>
+                            </div>
+                    </details>
+                    <details class="nested-details">
+                        <summary class="nested-summary cat-report">Montreal laws</summary>
+                            <div class="nested-box">
+                                <a href="https://montreal.ca/en/reglements-municipaux/" target="_blank" class="sub-link">
+                                    <strong>Montreal Municipal Bylaws</strong><br>
+                                    <span class="link-text blue">Search for Bylaws and Rules</span>
+                                </a>
+                                <a href="https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS" target="_blank" class="sub-link">
+                                    <strong>Montreal Tips and Resources</strong><br>
+                                    <span class="link-text blue">Montreal Tips and Resources</span> 
+                                </a>
+                                <a href="https://montreal.ca/en/services/issues-inside-dwelling" target="_blank" class="sub-link">
+                                    <strong>Montreal Tips and Resources</strong><br>
+                                    <span class="link-text blue">Montreal Issues Inside A Dwelling</span> 
+                                </a>
+                                <a href="https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463" target="_blank" class="sub-link">
+                                    <strong>What to Expect During a Rental Unit Inspection</strong><br>
+                                    <span class="link-text blue">Rental Unit Inspection Tips</span>
+                                </a>
+                                <a href="https://montreal.ca/en/request-dwelling-inspection" target="_blank" class="sub-link">
+                                    <strong>Request a Dwelling Inspection</strong><br>
+                                    <span class="link-text blue">Request Dwelling Inspection</span>
+                                </a>
+                            </div>
+                    </details>
+                    <details class="nested-details">
+                        <summary class="nested-summary cat-report">TAL Tribunal</summary>
+                            <div class="nested-box">
+                                <a href="https://www.tal.gouv.qc.ca/en/forms" target="_blank" class="sub-link">
+                                    <strong>Tribunal Administratif du Logement (TAL) Forms</strong><br>
+                                    <span class="link-text blue">TAL Forms</span>
+                                </a>
+                                <a href="https://www.tal.gouv.qc.ca/en/making-an-appointment-with-an-information-clerk" target="_blank" class="sub-link">
+                                    <strong>Make an Appointment with an Information Clerk at TAL</strong><br>
+                                    <span class="link-text blue">TAL Appointment</span>
+                                </a>
+                                <a href="https://www.tal.gouv.qc.ca/en/your-application-online/filing-an-application-to-the-tribunal" target="_blank" class="sub-link">
+                                    <strong>File an Application to the TAL Tribunal</strong><br>
+                                    <span class="link-text blue">TAL Application</span>
+                                </a>
+                            </div>
+                    </details>
+                </div>
         </details>
+        <details class="resource-group">
+            <summary class="resource-header" style="color: white;">QR CODE</summary>
+            <img src="OSINT QR.jpg" alt="fucking qr code didnt load dammit" style="max-width: 100%; height: auto; display: block;">
+        </details>
+        <details class="resource-group">
+            <summary class="resource-header" style="color: white;">URL List</summary>
+                <div class="resource-item">
+                    <a class="url-list" href="https://findmylandlord.netlify.app/">https://findmylandlord.netlify.app/</a>
+                    <br><a class="url-list" href="https://montreal.ca/en/how-to/check-property-assessment-rolls">https://montreal.ca/en/how-to/check-property-assessment-rolls</a>
+                    <br><a class="url-list" href="https://www.canadapost-postescanada.ca/ac">https://www.canadapost-postescanada.ca/ac</a>
+                    <br><a class="url-list" href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises">https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises</a>
+                    <br><a class="url-list" href="https://ised-isde.canada.ca/cbr-rec/">https://ised-isde.canada.ca/cbr-rec/</a>
+                    <br><a class="url-list" href="https://citoyens.soquij.qc.ca/">https://citoyens.soquij.qc.ca/</a>
+                    <br><a class="url-list" href="https://data.mashedworld.com/dualmaps/map.htm">https://data.mashedworld.com/dualmaps/map.htm</a>
+                    <br><a class="url-list" href="http://mobility.portal.geops.io/world.geops.transit">http://mobility.portal.geops.io/world.geops.transit</a>
+                    <br><a class="url-list" href="https://www.canada411.ca/search/advanced.html">https://www.canada411.ca/search/advanced.html</a>
+                    <br><a class="url-list" href="https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32">https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32</a>
+                    <br><a class="url-list" href="https://donnees.montreal.ca/">https://donnees.montreal.ca/</a>
+                    <br><a class="url-list" href="https://osintframework.com">https://osintframework.com</a>
+                    <br><a class="url-list" href="https://hackertarget.com">https://hackertarget.com</a>
+                    <br><a class="url-list" href="https://searsbear.github.io">https://montreal.ca/en/services/mtlwifi-internet-access-free-charge</a>
+                    <br><a class="url-list" href="https://educaloi.qc.ca/en/the-law-by-topic/">https://educaloi.qc.ca/en/the-law-by-topic/</a>
+                    <br><a class="url-list" href="https://montreal.ca/en/reglements-municipaux/">https://montreal.ca/en/reglements-municipaux/</a>
+                    <br><a class="url-list" href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html">https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html</a>
+                    <br><a class="url-list" href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/">https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/</a>
+                    <br><a class="url-list" href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/">https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/</a>
+                    <br><a class="url-list" href="https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS">https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS</a>
+                    <br><a class="url-list" href="https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463">https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463</a>
+                    <br><a class="url-list" href="https://montreal.ca/en/request-dwelling-inspection">https://montreal.ca/en/request-dwelling-inspection</a>
+                    <br><a class="url-list" href="https://www.canada411.ca/search/advanced.html">https://www.tal.gouv.qc.ca/en/forms</a>
+                </div>
+        </details>
+        <span class="gay-rainbow">
+        If you have more links and URL's please send them my way and I'll add them:)
+        </span>
+        <details class="resource-group"><summary class="resource-header" style="color: white;"></summary>
+            <div class="resource-item">
 
-
-    <h3 class="resource-header cat-legal">Gov and Court Search</h3>
-        <a href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises" target="_blank" class="resource-item cat-legal">
-            <strong class="gay-rainbow">Quebec</strong><strong> Business Registry</strong><br>
-            <span class="link-text really-gay-but-also-french">Registraire des Entreprises Search</span>
-        </a>
-        <a href="https://ised-isde.canada.ca/cbr-rec/" target="_blank" class="resource-item cat-legal">
-            <strong class="gay-rainbow">Canada</strong><strong> Business Registry</strong><br>
-            <span class="link-text really-gay">Corporations Canada Search</span>
-        </a>
-        <a href="https://citoyens.soquij.qc.ca/" target="_blank" class="resource-item cat-legal">
-            <strong>SOQUIJ Judicial Decisions, Court Record</strong><br>
-            <span class="link-text gay-but-in-a-cool-way">Search <span class="link-text gay-rainbow">Court</span><span class="link-text gay-but-in-a-cool-way"> Records</span>
-        </a>
-
-    <h3 class="resource-header cat-geo">Map Searching</h3>
-         <a href="https://data.mashedworld.com/dualmaps/map.htm" target="_blank" class="resource-item cat-geo">
-            <strong>Dual Maps for viewing, Street, Satelite, Regular in one tab</strong><br>
-            <span class="link-text red">Search Map</span>
-        </a>
-        <a href="http://mobility.portal.geops.io/world.geops.transit" target="_blank" class="resource-item cat-geo">
-            <strong>Live Transport Tracker</strong><br>
-            <span class="link-text red">Transport Map & Info</span>
-        </a>
-
-
-
-    <h3 class="resource-header cat-person">Person Search, Number Search, Google Search</h3>
-        <a href="https://www.canada411.ca/search/advanced.html" target="_blank" class="resource-item cat-person">
-            <strong>Canada411</strong><br>
-            <span class="link-text purple">Search Canada411</span>
-        </a>
-        <a href="https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32" target="_blank" class="resource-item cat-person">
-            <strong>Google Dorking Guide</strong><br>
-            <span class="link-text purple">Google dorking cheatsheet</span>
-        </a>
-
-
-<details class="resource-group">
-    <summary class="resource-header cat-data">Data Seaerch and Extras</summary>
-    <div class="dropdown-content">
-        <a href="https://donnees.montreal.ca/" target="_blank" class="resource-item cat-data">
-            <strong class="gay-rainbow">Montreal</strong><strong> Open Data Portal</strong><br>
-            <span class="link-text gay">Geo files & Stats</span>
-        </a>
-        <a href="https://spvm.qc.ca/en/Search/Adresse" target="_blank" class="resource-item cat-data">
-            <strong>Find your local </strong><strong class="gay-rainbow">SPVM</strong> Station</strong><br>
-            <span class="link-text gay-but-with-guns">Search by Address</span>
-        </a>
-        <a href="https://osintframework.com" target="_blank" class="resource-item cat-data">
-            <strong>OSINT Framework</strong><br>
-            <span class="link-text grey">Open OSINT Resource</span>
-        </a>
-        <a href="https://hackertarget.com" target="_blank" class="resource-item cat-data">
-            <strong>Hacker Target Resource</strong><br>
-            <span class="link-text grey">Find Stuff IDK look lol</span>
-        </a>
-        <a href="https://searsbear.github.io" target="_blank" class="resource-item cat-data">
-            <strong>Other Reources for Less OSINT heavy things but still useful</strong><br>
-            <span class="link-text grey">Look Here lol IDK</span>
-        </a>
-        <a href="https://en.wikipedia.org/wiki/List_of_intelligence_gathering_disciplines" target="_blank" class="resource-item cat-data">
-            <span class="link-text grey">Intelligence Gathering Disciplines</span>
-        </a>
-        <a href="https://en.wikipedia.org/wiki/Intelligence_assessment" target="_blank" class="resource-item cat-data">
-            <span class="link-text grey">Intel assessment styles</span>
-        </a>
-        <a href="https://barcode.tec-it.com/en/QRCode" target="_blank" class="resource-item cat-data">
-            <span class="link-text grey">QR Code Generator (or any barcode)</span>
-        </a>
+            </div>
+        </details>
     </div>
-</details>
-
-<details class="resource-group">
-    <summary class="resource-header cat-report">Legal Resources and Reporting</summary>
-    <div class="dropdown-content">
-
-      <details class="nested-details"> 
-      <summary class="nested-summary cat-report">Educaloi</summary>
-      <div class="nested-box">
-        <a href="https://educaloi.qc.ca/en/the-law-by-topic/" target="_blank" class="sub-link">
-            <strong>Educaloi</strong><br>
-            <span class="link-text blue">Learn the Laws and Rules</span>
-        </a>
-        <a href="https://educaloi.qc.ca/wp-content/uploads/guide_info_sheet_2.pdf" target="_blank" class="sub-link">
-            <strong>Guide for finding free legal clinics</strong><br>
-            <span class="link-text blue">legal aid, legal clinic PDF list</span>
-        </a>
-      </div>
-      </details>
-
-       <details class="nested-details"> 
-        <summary class="nested-summary cat-report">Reporting Fraud</summary>
-        <div class="nested-box">
-        <a href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html" target="_blank" class="sub-link">
-            <strong>Report Suspected Tax Cheating in Canada</strong><br>
-            <span class="link-text blue">Report Tax Cheating</span>
-        </a>
-        <a href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/" target="_blank" class="sub-link">
-            <strong>Report Non-Compliance to Revenu Quebec</strong><br>
-            <span class="link-text blue">Report Non-Compliance</span>
-        </a>
-        <a href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/" target="_blank" class="sub-link">
-            <strong>How to Document Non-Compliance for Revenu Quebec</strong><br>
-            <span class="link-text blue">Document Non-Compliance</span>
-        </a>
-        </div>
-        </details>
-
-        <details class="nested-details">
-        <summary class="nested-summary cat-report">Montreal laws</summary>
-        <div class="nested-box">
-        <a href="https://montreal.ca/en/reglements-municipaux/" target="_blank" class="sub-link">
-            <strong>Montreal Municipal Bylaws</strong><br>
-            <span class="link-text blue">Search for Bylaws and Rules</span>
-        </a>
-        <a href="https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS" target="_blank" class="sub-link">
-            <strong>Montreal Tips and Resources</strong><br>
-            <span class="link-text blue">Montreal Tips and Resources</span> 
-        </a>
-        <a href="https://montreal.ca/en/services/issues-inside-dwelling" target="_blank" class="sub-link">
-            <strong>Montreal Tips and Resources</strong><br>
-            <span class="link-text blue">Montreal Issues Inside A Dwelling</span> 
-        </a>
-        <a href="https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463" target="_blank" class="sub-link">
-            <strong>What to Expect During a Rental Unit Inspection</strong><br>
-            <span class="link-text blue">Rental Unit Inspection Tips</span>
-        </a>
-        <a href="https://montreal.ca/en/request-dwelling-inspection" target="_blank" class="sub-link">
-            <strong>Request a Dwelling Inspection</strong><br>
-            <span class="link-text blue">Request Dwelling Inspection</span>
-        </a>
-        </div>
-        </details>
-
-        <details class="nested-details">
-        <summary class="nested-summary cat-report">TAL Tribunal</summary>
-        <div class="nested-box">
-        <a href="https://www.tal.gouv.qc.ca/en/forms" target="_blank" class="sub-link">
-            <strong>Tribunal Administratif du Logement (TAL) Forms</strong><br>
-            <span class="link-text blue">TAL Forms</span>
-        </a>
-        <a href="https://www.tal.gouv.qc.ca/en/making-an-appointment-with-an-information-clerk" target="_blank" class="sub-link">
-            <strong>Make an Appointment with an Information Clerk at TAL</strong><br>
-            <span class="link-text blue">TAL Appointment</span>
-        </a>
-        <a href="https://www.tal.gouv.qc.ca/en/your-application-online/filing-an-application-to-the-tribunal" target="_blank" class="sub-link">
-            <strong>File an Application to the TAL Tribunal</strong><br>
-            <span class="link-text blue">TAL Application</span>
-        </a>
-        </div>
-        </details>
-
-    </div>
-</details>
-
-<details class="resource-group">
-  <summary class="resource-header" style="color: white;">QR CODE</summary>
-    <img src="OSINT QR.jpg" alt="fucking qr code didnt load dammit" style="max-width: 100%; height: auto; display: block;">
-</details>
-  
-<details class="resource-group">
-    <summary class="resource-header" style="color: white;">URL List</summary>
-<div class="resource-item">
-    <a class="url-list" href="https://findmylandlord.netlify.app/">https://findmylandlord.netlify.app/</a>
-    <br><a class="url-list" href="https://montreal.ca/en/how-to/check-property-assessment-rolls">https://montreal.ca/en/how-to/check-property-assessment-rolls</a>
-    <br><a class="url-list" href="https://www.canadapost-postescanada.ca/ac">https://www.canadapost-postescanada.ca/ac</a>
-    <br><a class="url-list" href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises">https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises/acceder-registre-entreprises</a>
-    <br><a class="url-list" href="https://ised-isde.canada.ca/cbr-rec/">https://ised-isde.canada.ca/cbr-rec/</a>
-    <br><a class="url-list" href="https://citoyens.soquij.qc.ca/">https://citoyens.soquij.qc.ca/</a>
-    <br><a class="url-list" href="https://data.mashedworld.com/dualmaps/map.htm">https://data.mashedworld.com/dualmaps/map.htm</a>
-    <br><a class="url-list" href="http://mobility.portal.geops.io/world.geops.transit">http://mobility.portal.geops.io/world.geops.transit</a>
-    <br><a class="url-list" href="https://www.canada411.ca/search/advanced.html">https://www.canada411.ca/search/advanced.html</a>
-    <br><a class="url-list" href="https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32">https://gist.github.com/aw-junaid/cba1717689b9a1a942451b774085aa32</a>
-    <br><a class="url-list" href="https://donnees.montreal.ca/">https://donnees.montreal.ca/</a>
-    <br><a class="url-list" href="https://osintframework.com">https://osintframework.com</a>
-    <br><a class="url-list" href="https://hackertarget.com">https://hackertarget.com</a>
-    <br><a class="url-list" href="https://searsbear.github.io">https://montreal.ca/en/services/mtlwifi-internet-access-free-charge</a>
-    <br><a class="url-list" href="https://educaloi.qc.ca/en/the-law-by-topic/">https://educaloi.qc.ca/en/the-law-by-topic/</a>
-    <br><a class="url-list" href="https://montreal.ca/en/reglements-municipaux/">https://montreal.ca/en/reglements-municipaux/</a>
-    <br><a class="url-list" href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html">https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html</a>
-    <br><a class="url-list" href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/">https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/</a>
-    <br><a class="url-list" href="https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/">https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/</a>
-    <br><a class="url-list" href="https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS">https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS</a>
-    <br><a class="url-list" href="https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463">https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463</a>
-    <br><a class="url-list" href="https://montreal.ca/en/request-dwelling-inspection">https://montreal.ca/en/request-dwelling-inspection</a>
-    <br><a class="url-list" href="https://www.canada411.ca/search/advanced.html">https://www.tal.gouv.qc.ca/en/forms</a>
-</div>
-</details>
-<span class="gay-rainbow">
-  If you have more links and URL's please send them my way and I'll add them:)
-</span>
-
-<details class="resource-group"><summary class="resource-header" style="color: white;">              </summary>
-<div class="resource-item">
-
-
-</div></details>
-
-</div>
 </div>
 </body>
 <script>
