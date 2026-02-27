@@ -352,7 +352,7 @@
         21: "Décisions judiciaires de SOQUIJ, dossiers judiciaires",
         22: "Rechercher",
         23: " des dossiers judiciaires",
-        24: " ",
+        24: ".",
         25: "Recherche cartographique",
         26: "Double carte pour l'affichage : rue, satellite, régulière dans un seul onglet",
         27: "Rechercher sur la carte",
@@ -364,7 +364,6 @@
         33: "Guide de recherche Google",
         34: "Aide-mémoire de recherche Google",
         35: "Recherche de données et suppléments",
-
         36: "Portail de données ouvertes de Montréal",
         37: "Fichiers géographiques et statistiques",
         38: "Trouver votre station ",
@@ -418,27 +417,22 @@
 };
 
 function setLanguage(lang) {
-    // 1. Find all elements with the data-i18n attribute
+    // 1. Get all elements that have the data-i18n attribute
     const elements = document.querySelectorAll('[data-i18n]');
     
     elements.forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
+        // Get the key and trim any accidental whitespace (you have a space in data-i18n="35 ")
+        const key = el.getAttribute('data-i18n').trim();
+        
+        // Check if the translation exists for that key
+        if (translations[lang] && translations[lang][key]) {
             el.innerText = translations[lang][key];
         }
     });
 
-    // 2. Optional: Change links if the FR version has a different URL
-    // Example: document.getElementById('my-link').href = translations[lang].link_url;
-
-    // 3. Save preference
+    // 2. Save preference to the browser
     localStorage.setItem('pwa-lang', lang);
     document.documentElement.lang = lang;
 }
-
-// Run on load
-const savedLang = localStorage.getItem('pwa-lang') || 'en';
-setLanguage(savedLang);
-
 </script>
 </html>
