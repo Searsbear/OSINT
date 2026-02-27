@@ -67,6 +67,64 @@ details[open] summary.resource-header::after {
     padding-top: 10px;
 }
 
+.nested-details {
+    margin-bottom: 10px;
+}
+
+/* The container box for the sub-links */
+.nested-box {
+    background: #0f172a;      /* Matches your resource-item background */
+    border: 1px solid #1e293b; /* Matches your resource-item border */
+    padding: 5px 0;
+    margin-bottom: 8px;
+    margin-top: -5px;          /* Pulls it closer to the summary */
+}
+
+/* Individual links inside that box */
+.sub-link {
+    display: block;
+    padding: 10px 15px;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #1e293b; /* Divider between links */
+}
+
+/* Remove border from the last link so it looks clean */
+.sub-link:last-child {
+    border-bottom: none;
+}
+
+.sub-link:hover {
+    background: #1e293b;
+    color: white;
+}
+
+/* Make the sub-header (Educaloi) match the box width */
+.nested-summary {
+    background: #1e293b;
+    padding: 12px;
+    color: #3b82f6;
+    font-family: monospace;
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    margin-bottom: 0; /* Align perfectly with the box below */
+    font-size: 0.85rem;
+    border: 1px solid #1e293b;
+}
+
+.nested-summary {
+    background: #1e293b;
+    padding: 10px;
+    color: #3b82f6; /* Matching your .blue class */
+    font-family: monospace;
+    cursor: pointer;
+    list-style: none;
+    border: 1px solid #3b82f6;
+    display: block;
+}
 
       .resource-item {
         display: block;
