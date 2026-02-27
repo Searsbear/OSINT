@@ -237,3 +237,29 @@ textarea {
   0% { background-position: 0 0; }
   100% { background-position: 200% center; }
 }
+
+/* Style for the language buttons */
+.lang-btn {
+    background-color: #0f172a; /* Dark slate to match your theme */
+    color: #f8fafc;
+    border: 2px solid #334155;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect: Subtle glow */
+.lang-btn:hover {
+    background-color: #1e293b;
+    border-color: #6366f1; /* Indigo border on hover */
+    transform: translateY(-1px);
+}
+
+/* Active effect: When clicked */
+.lang-btn:active {
+    transform: translateY(1px);
+}
