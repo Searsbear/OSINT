@@ -46,6 +46,16 @@
     border-color: #FFFF00 !important;
   }
 
+.cat-health, .cyan {
+    color: turquoise;
+    border-color: turquoise !important;
+}
+
+.cat-transport, .pink {
+    color: #f4a2b0;
+    border-color: #f4a2b0 !important;
+  }
+
       /* Dropdown Styling */
 /* Container for the dropdown */
 details.resource-group {
@@ -268,3 +278,7 @@ textarea {
 .lang-btn:active {
     transform: translateY(1px);
 }
+
+
+
+
